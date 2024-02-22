@@ -3,6 +3,7 @@
   "version": "0.1.0",
   "description": "variousjs registry",
   "scripts": {
+    "build": "node scripts/manifest.js"
   },
   "repository": {
     "type": "git",
@@ -17,5 +18,8 @@
   "bugs": {
     "url": "https://github.com/variousjs/registry/issues"
   },
-  "homepage": "https://github.com/variousjs/registry#readme"
+  "homepage": "https://github.com/variousjs/registry#readme",
+  "dependencies": {
+    "js-yaml": "^4.1.0"
+  }
 }
