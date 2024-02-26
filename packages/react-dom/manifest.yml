@@ -4,5 +4,5 @@ homepage: https://reactjs.org
 dist-tags:
   latest: 18.2.0
 versions:
-  18.2.0: https://cdn.jsdelivr.net/npm/react-dom@18.2.0/umd/react-dom.production.min.js
-  18.1.0: https://cdn.jsdelivr.net/npm/react-dom@18.2.0/umd/react-dom.production.min.js
+  18.2.0:
+    dist: https://cdn.jsdelivr.net/npm/react-dom@18.2.0/umd/react-dom.production.min.js

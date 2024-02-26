@@ -4,5 +4,5 @@ homepage: https://github.com/facebook/react
 dist-tags:
   latest: 18.2.0
 versions:
-  18.2.0: https://cdn.jsdelivr.net/npm/react@18.2.0/umd/react.production.min.js
-  18.1.0: https://cdn.jsdelivr.net/npm/react@18.1.0/umd/react.production.min.js
+  18.2.0:
+    dist: https://cdn.jsdelivr.net/npm/react@18.2.0/umd/react.production.min.js
