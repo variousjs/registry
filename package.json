@@ -2,6 +2,9 @@
   "name": "@variousjs/registry",
   "version": "0.1.0",
   "description": "variousjs registry",
+  "publishConfig": {
+    "access": "public"
+  },
   "scripts": {
     "build": "webpack --progress && node manifest.js"
   },

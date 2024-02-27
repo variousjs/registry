@@ -1,3 +1,4 @@
 .DS_Store
 node_modules/
-*.LICENSE.txt
+dist/
+registry.json
