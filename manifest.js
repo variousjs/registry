@@ -1,6 +1,7 @@
 const { resolve } = require('path')
 const { readdirSync, existsSync, readFileSync, writeFileSync } = require('fs')
 const { load } = require('js-yaml')
+const { version } = require('./package.json')
 
 const manifests = readdirSync(resolve(__dirname, './packages'))
   .map((dir) => resolve(__dirname, './packages', dir, 'manifest.yml'))
@@ -11,7 +12,7 @@ const manifests = readdirSync(resolve(__dirname, './packages'))
       ...prev,
       [cur]: {
         ...config.versions[cur],
-        dist: config.versions[cur].dist || `https://cdn.jsdelivr.net/npm/@variousjs/registry/dist/${config.name}/${cur}`,
+        dist: config.versions[cur].dist || `https://cdn.jsdelivr.net/npm/@variousjs/registry@${version}/dist/${config.name}/${cur}`,
       },
     }), {})
     return config
