@@ -12,7 +12,7 @@ const manifests = readdirSync(resolve(__dirname, './packages'))
       ...prev,
       [cur]: {
         ...config.versions[cur],
-        dist: config.versions[cur].dist || `https://cdn.jsdelivr.net/npm/@variousjs/registry@${version}/dist/${config.name}/${cur}`,
+        dist: config.versions[cur].dist || `https://cdn.jsdelivr.net/npm/@variousjs/registry@${version}/dist/${config.name}/${cur}/index.js`,
       },
     }), {})
     return config
