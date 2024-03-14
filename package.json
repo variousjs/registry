@@ -1,6 +1,6 @@
 {
   "name": "@variousjs/registry",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "variousjs registry",
   "publishConfig": {
     "access": "public"
@@ -38,6 +38,8 @@
     "webpack-cli": "^5.1.4"
   },
   "dependencies": {
+    "@types/react": "18.2.0",
+    "@types/react-dom": "18.2.0",
     "react-router-dom": "6.22.1"
   }
 }
