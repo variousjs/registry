@@ -1,8 +1,16 @@
 {
   "name": "@variousjs/registry",
-  "version": "0.1.3",
+  "version": "0.1.4",
   "description": "variousjs registry",
   "main": "registry.json",
+  "exports": {
+    ".": {
+      "require": {
+        "types": "./index.d.ts",
+        "default": "./registry.json"
+      }
+    }
+  },
   "publishConfig": {
     "access": "public"
   },
@@ -11,7 +19,8 @@
   },
   "files": [
     "dist",
-    "registry.json"
+    "registry.json",
+    "index.d.ts"
   ],
   "repository": {
     "type": "git",
