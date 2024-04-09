@@ -1,6 +1,6 @@
 {
   "name": "@variousjs/registry",
-  "version": "0.1.6",
+  "version": "0.1.7",
   "description": "variousjs registry",
   "main": "registry.json",
   "exports": {
