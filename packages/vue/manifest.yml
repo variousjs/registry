@@ -1,0 +1,8 @@
+name: vue
+description: The progressive JavaScript framework for building modern web UI.
+homepage: https://github.com/vuejs/core/tree/main/packages/vue#readme
+dist-tags:
+  latest: 3.5.22
+versions:
+  3.5.22:
+    dist: https://cdn.jsdelivr.net/npm/vue@3.5.22/dist/vue.global.prod.js
