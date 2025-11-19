@@ -2,7 +2,8 @@ name: react
 description: React is a JavaScript library for building user interfaces.
 homepage: https://github.com/facebook/react
 dist-tags:
-  latest: 18.2.0
+  latest: 19.2.0
 versions:
+  19.2.0:
   18.2.0:
     dist: https://cdn.jsdelivr.net/npm/react@18.2.0/umd/react.production.min.js

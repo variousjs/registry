@@ -2,7 +2,10 @@ name: react-dom
 description: React package for working with the DOM.
 homepage: https://reactjs.org
 dist-tags:
-  latest: 18.2.0
+  latest: 19.2.0
 versions:
+  19.2.0:
+    dependencies:
+      react: '19.2.0'
   18.2.0:
     dist: https://cdn.jsdelivr.net/npm/react-dom@18.2.0/umd/react-dom.production.min.js
