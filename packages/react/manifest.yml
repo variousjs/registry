@@ -5,5 +5,6 @@ dist-tags:
   latest: 19.2.0
 versions:
   19.2.0:
+    dependencies:
   18.2.0:
     dist: https://cdn.jsdelivr.net/npm/react@18.2.0/umd/react.production.min.js

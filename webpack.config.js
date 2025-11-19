@@ -1,4 +1,5 @@
 const { resolve } = require('path')
+const webpack = require('webpack')
 const { readdirSync, existsSync, readFileSync } = require('fs')
 const { load } = require('js-yaml')
 const { dependencies } = require('./package.json')
@@ -33,7 +34,12 @@ const config = entries.map((t) => ({
   },
   entry: t.path,
   mode: 'production',
-  externals: Object.keys(t.versions[t.version].dependencies),
+  plugins: [
+    new webpack.DefinePlugin({
+      'process.env.NODE_ENV': JSON.stringify('production'),
+    }),
+  ],
+  externals: Object.keys(t.versions[t.version].dependencies || {}),
   output: {
     path: resolve(__dirname, './dist', t.name, t.version),
     filename: 'index.js',
